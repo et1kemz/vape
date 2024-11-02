@@ -1,5 +1,7 @@
 body, header{
     margin: 0;
+    background-image: url(/images/background.jpg);
+    background-position: static;
 }
 .navbar{
     width: 100%;
@@ -104,9 +106,9 @@ body, header{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #d82020;
     width: 50%;
     height: 700px;
+    position: relative;
 }
 .slide_arrows{
     width: 45px;
@@ -120,6 +122,8 @@ body, header{
 .slide_arrows img{
     width: 45px;
     height: 45px;
+    border-radius: 7px;
+
 }
 .slider{
     width: 56%;
@@ -146,7 +150,7 @@ body, header{
 }
 .gallery span{
     width: 500px;
-    height: 500px;
+    height: 600px;
     background-color: #000000d3;
     border-radius: 40px;
     text-align: center;
@@ -156,7 +160,46 @@ body, header{
 .gallery p{
     color: #ffffff;
     line-height: 1.4em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
 }
+@keyframes gradienttext{
+    from{
+        color: chartreuse;
+    }
+    50%{
+        color: aqua;
+    }
+    to{
+       color: chartreuse; 
+    }
+}
+@keyframes gradienttext1 {
+    from{
+        color: red;
+    }
+    50%{
+        color: yellow;
+    }
+    to{
+        color: red;
+    }
+}
+    .gallery p1{
+        font-size: 20px;
+        animation-name: gradienttext;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .gallery p2{
+        font-size: 20px;
+        animation-name: gradienttext1;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    }
 .slide_arrows:active{
     transform:scale(1.3);
 }
@@ -167,8 +210,10 @@ body, header{
     border-radius: 15px;
     position: absolute;
     bottom: 6%;
-    left: 20%;
+    left: 14%;
     transition: 300ms;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
 }
 .price:hover{
     transform: scale(1.2);
@@ -176,4 +221,39 @@ body, header{
 .price p{
     color: #000000;
     margin-top: 10px;
+    font-size: 25px;
+}
+.popular-product p{
+    position: absolute;
+    top: 0;
+}
+
+.image-container-catalog {
+    position: relative;
+    width: 300px; /* Установите нужную ширину */
+}
+
+.main-image-catalog {
+    width: 100%;
+    transition: opacity 0.3s ease;
+}
+
+.thumbnails-catalog {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.thumbnail-catalog {
+    width: 50px; /* Размер миниатюр */
+    height: 50px;
+    border-radius: 50%; /* Кружковая форма */
+    margin: 0 5px;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+}
+
+.thumbnail-catalog:hover {
+    opacity: 1; /* Увеличиваем непрозрачность при наведении */
 }

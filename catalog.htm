@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Шапка сайта</title>
+</head>
+<body>
+    <header>
+                <div class="navbar">
+                    <div class="nav-menu">
+                        <div class="logo">
+                            <img src="/images/logo.jpg">
+                        </div>
+                        <div class="menu">
+                            <a href="/index.htm">Главная</a>
+                            <a href="/catalog.htm">Каталог</a>
+                            <a href="">Контакты</a>
+                            <a href="">Рекомендации</a>
+                        </div>
+                        <div class="icons">
+                            <a href="#"><img src="/images/backet.jpg" id="basket"></a>
+                            <a href="#"><img src="/images/profile.png" id="profile"></a>
+                        </div>
+                    </div>
+                </div>
+    </header>
+    <div class="catalog-body"> 
+        <div class="product">
+            <a href="#">Одноразовые устройства</a>
+            <hr>
+            <a href="#">Вейпы</a>
+            <hr>
+            <a href="#">Жидкости</a>
+            <hr>
+            <a href="#">Комплектующие</a>
+        </div>
+
+        <div class="image-container-catalog">
+            <img src="/images/geekvapeWenax-GradientPurple.jpg" class="main-image-catalog">
+            <div class="thumbnails-catalog">
+                <img src="/images/geekvapeWenax-GradientGray.jpg"  class="thumbnail-catalog" data-image="/images/geekvapeWenax-GradientGray.jpg">
+                <img src="/images/geekvapeWenax-GradientGold.jpg" class="thumbnail-catalog" data-image="/images/geekvapeWenax-GradientGold.jpg">
+                <img src="/images/geekvapeWenax-GradientPurple.jpg" class="thumbnail-catalog" data-image="/images/geekvapeWenax-GradientPurple.jpg">
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const thumbnails = document.querySelectorAll('.thumbnail');
+    const mainImage = document.querySelector('.main-image');
+
+    thumbnails.forEach(thumbnail => {
+        thumbnail.addEventListener('mouseover', function() {
+            const newImage = this.getAttribute('data-image');
+            mainImage.src = newImage; // Меняем изображение при наведении
+        });
+    });
+});
+    </script>
+</body>
+</html>
