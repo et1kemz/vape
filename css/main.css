@@ -223,37 +223,46 @@ body, header{
     margin-top: 10px;
     font-size: 25px;
 }
-.popular-product p{
-    position: absolute;
-    top: 0;
-}
-
-.image-container-catalog {
-    position: relative;
-    width: 300px; /* Установите нужную ширину */
-}
-
-.main-image-catalog {
-    width: 100%;
-    transition: opacity 0.3s ease;
-}
-
-.thumbnails-catalog {
-    display: flex;
-    justify-content: center;
+.catalog-product{
+    width: 300px;
+    height: 300px;
+    background-color: black;
     margin-top: 10px;
-}
+    display: inline-block;
+    margin-top: 25px;
+    justify-content: center;
 
-.thumbnail-catalog {
-    width: 50px; /* Размер миниатюр */
-    height: 50px;
-    border-radius: 50%; /* Кружковая форма */
-    margin: 0 5px;
-    cursor: pointer;
-    opacity: 0.6;
-    transition: opacity 0.3s ease;
 }
+.catalog-product p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #fff;
+}
+.catalog-product img{
+    width: 60%;
+    height: 60%;
+    margin-top: 10px;
+    justify-content: center;
+    display: flex;
+    
+}
+.catalog-product-price{
+    background-color: #fff;
+    width: 200px;
+    height: 60px;
+    border-radius: 15px;
+    position: absolute;
+    bottom: 6%;
+    left: 14%;
+    transition: 300ms;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
 
-.thumbnail-catalog:hover {
-    opacity: 1; /* Увеличиваем непрозрачность при наведении */
+}
+.catalog-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    grid-auto-rows: 45%;
+    gap: 50px;
+    background-color: red;
 }
