@@ -250,7 +250,7 @@ body, header{
     height: 230px;
     width: 230px;
 }
-.price{
+.price-catalog{
     background-color: #000000;
     margin: auto;
     width: 200px;
@@ -261,7 +261,7 @@ body, header{
     align-items: center;
 }
 
-.price p{
+.price-catalog p{
     color: #fff;
     font-size: 2em;
 }
