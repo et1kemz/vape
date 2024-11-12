@@ -277,15 +277,25 @@ body, header{
     text-decoration: none;
 }
 .contact{
-    margin-left: 40px;
+    margin-left: 400px;
     margin-top: 30px;
     border-radius: 30px;
     display: flex;
     justify-content: center;
-    align-items: center;
     width: 60%;
     height: 450px;
     background-color: #000000c7;
+}
+.top-image img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
 }
 .contact li{
     font-size: 35px;
@@ -293,6 +303,88 @@ body, header{
     color: #ffffff;
 }
 .contact img{
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
+    margin-top: 10px;
+}
+.contact-text{
+    flex: 1;
+}
+.right-image img {
+    max-width: 300px;
+    height: auto;
+    margin-left: 30px;
+}
+.footer {
+    background-color: #0a0a0aea;
+    color: #fff;
+    padding: 40px 0 20px;
+    margin-top: auto;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 200px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-section h3 {
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: #ddd;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    margin-right: 15px;
+    font-size: 20px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 40px;
+    border-top: 1px solid #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-section {
+        min-width: 100%;
+        text-align: center;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+    }
 }
