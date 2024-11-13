@@ -68,9 +68,9 @@ body, header{
 }
 .catalog-body{
     width: 90%;
-    height: 2000px;
+    height: 800px;
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 4fr;
 }
 
 .product{
@@ -377,7 +377,6 @@ body, header{
     border-top: 1px solid #555;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .footer-section {
         min-width: 100%;
@@ -387,4 +386,21 @@ body, header{
     .footer-content {
         flex-direction: column;
     }
+}
+.popular-product{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    margin-top: 15px;
+}
+.popular-text{
+    background-color: #000000;
+    margin-left: 330px;
+}
+.popular-text p{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #fff;
+    font-size: 25px;
 }
