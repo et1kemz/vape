@@ -71,6 +71,7 @@ body, header{
     height: 800px;
     display: grid;
     grid-template-columns: 1fr 4fr;
+    margin-top: 60px;
 }
 
 .product{
@@ -396,8 +397,11 @@ body, header{
     margin-top: 15px;
 }
 .popular-text{
-    background-color: #000000;
+    background-color: #000000bb;
     margin-left: 330px;
+    border-radius: 20px;
+    width: 250px;
+    height: 80px;
 }
 .popular-text p{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
