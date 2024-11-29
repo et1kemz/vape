@@ -274,12 +274,15 @@ body, header{
     color: #000000;
     font-size: 2em;
 }
+.price-catalog:hover{
+    transform: scale(1.2);
+}
 .product-catalog a{
     text-decoration: none;
 }
 .contact{
     margin-left: 400px;
-    margin-top: 30px;
+    margin-top: 50px;
     border-radius: 30px;
     display: flex;
     justify-content: center;
@@ -298,6 +301,9 @@ body, header{
     align-items: flex-start;
     gap: 20px;
 }
+.contact ul{
+    margin-top: 120px;
+}
 .contact li{
     font-size: 35px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -306,7 +312,7 @@ body, header{
 .contact img{
     width: 200px;
     height: 200px;
-    margin-top: 10px;
+    margin-top: 100px;
 }
 .contact-text{
     flex: 1;
