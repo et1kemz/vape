@@ -144,11 +144,6 @@ body, header{
         color: #000000;
         font-size: 2em;
     }
-    .price-catalog button{
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        color: #000000;
-        font-size: 2em;
-    }
     .price-catalog:hover{
         transform: scale(1.2);
     }
